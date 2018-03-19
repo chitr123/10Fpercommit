@@ -9,7 +9,7 @@ do mkdir commit_dir_$nb_commit;
 cd commit_dir_$nb_commit;
 nb_file=1;
 while [ $nb_file -le $files_per_commit ];
-do cp $file_path_10KB c_$nb_commit_f_$nb_file;
+do cp $file_path_10KB c_$nb_commit"_f_"$nb_file;
 nb_file=$((nb_file+1))
 done
 git add .*
